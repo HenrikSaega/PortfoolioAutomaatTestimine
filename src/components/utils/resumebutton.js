@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import resumePDF from "../pics/resume_Henrik_Saega.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 import '../styles/resume.css';
 
-export default function ResumePopup() {
+export default function ResumeButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,16 +14,12 @@ export default function ResumePopup() {
       {isOpen && (
         <div className="model-overlay" onClick={() => setIsOpen(false)}>
           <div className="model-content" onClick={e => e.stopPropagation()}>
-            <iframe
-              src={`${resumePDF}#toolbar=0&navpanes=0`}
-              title="CV"
-              className="resume-iframe"
-            />
             <div className='buttons'>
                 <a
-                  href={resumePDF}
                   download="resume_Henrik_Saega.pdf"
                   className="download-link"
+                  aria-label="Download CV"
+                  role="link"
                   onClick={e => e.stopPropagation()}
                 >
                  <MdOutlineFileDownload color="white" size={40}/>

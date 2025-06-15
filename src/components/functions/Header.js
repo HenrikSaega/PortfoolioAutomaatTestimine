@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../styles/header.css';
 import { ReactComponent as Logo } from "../pics/Logo2.svg";
 
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [hovered, setHovered] = useState(false);
