@@ -47,10 +47,5 @@
     "@testing-library/user-event": "^14.6.1",
     "babel-jest": "^29.7.0",
     "identity-obj-proxy": "^3.0.0"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
-    }
   }
 }

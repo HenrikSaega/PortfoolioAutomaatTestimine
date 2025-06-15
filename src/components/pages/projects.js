@@ -14,9 +14,9 @@ const Projects = () => {
         <div className="projektid-container">
           <p className="no-select projects-h1">PROJECTS</p>
           <div className="projektid-grid-container">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
                 <div
-                    key={project.id}
+                    key={`${project.id}-${index}`}
                     className="projektid-grid-item no-select"
                     onClick={() => openModel(project)}>
                     <p>{project.title}</p>
@@ -27,7 +27,7 @@ const Projects = () => {
       </div>
 
       {selectedProject && (
-        <div className="model-overlay" onClick={closeModel}>
+        <div className="model-overlay" data-testid="modal-overlay" onClick={closeModel}>
           <div className="model-content" onClick={(e) => e.stopPropagation()}>
             <div className="model-grid">
               <div className="model-left">

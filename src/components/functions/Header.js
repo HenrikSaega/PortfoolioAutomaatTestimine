@@ -34,10 +34,10 @@ const Header = () => {
     >
       <nav className="nav-buttons">
         <NavLink className="no-select header_a"  to="/" exact="true" activeClassName="active">HOME</NavLink>
-        <NavLink className="no-select header_a"  to="/aboutme" activeclassname="active">ABOUT ME</NavLink>
+        <NavLink className="no-select header_a"  to="/aboutme" activeclassName="active">ABOUT ME</NavLink>
         <Logo className='logo no-select' />
-        <NavLink className="no-select header_a"  to="/projects" activeclassname="active">PROJECTS</NavLink>
-        <NavLink to="/contact" activeclassname="active" className="header_a">CONTACT</NavLink>
+        <NavLink className="no-select header_a"  to="/projects" activeclassName="active">PROJECTS</NavLink>
+        <NavLink to="/contact" activeclassName="active" className="header_a">CONTACT</NavLink>
       </nav>
     </header>
   );
