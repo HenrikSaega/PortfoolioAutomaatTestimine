@@ -1,0 +1,30 @@
+.phone-container, .email-container{
+  font-size: clamp(0.5rem, 0.7vw, 1.7rem);
+}
+
+
+.phone-container:hover, .email-container:hover {
+  color: #ffffff;
+  transform: translateX(2rem);
+}
+
+
+.phone-container.copied, .phone-container.copied {
+  color: #fff;
+}
+
+.phone-container, .email-container{
+  height: 3rem;
+  display: flex;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+  margin-bottom: clamp(0.1rem, 1.5vh, 1rem);
+}
+
+
+.phone-icon, .email-icon {
+  scale: 3;
+  margin:  0 1.5rem;
+}
